@@ -1,0 +1,17 @@
+{
+  "origem": "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=4.0.8.RELEASE&baseDir=config-server&groupId=br.edu.trabalho&artifactId=config-server&name=ConfigServer&packageName=br.edu.trabalho.configserver&description=Trabalho+pratico+de+configuracao+centralizada&packaging=jar&javaVersion=21&dependencies=web%2Cactuator%2Ccloud-config-server",
+  "parametros": {
+    "type": "maven-project",
+    "language": "java",
+    "bootVersion": "4.0.8.RELEASE",
+    "baseDir": "config-server",
+    "groupId": "br.edu.trabalho",
+    "artifactId": "config-server",
+    "name": "ConfigServer",
+    "packageName": "br.edu.trabalho.configserver",
+    "description": "Trabalho pratico de configuracao centralizada",
+    "packaging": "jar",
+    "javaVersion": "21",
+    "dependencies": "web,actuator,cloud-config-server"
+  }
+}

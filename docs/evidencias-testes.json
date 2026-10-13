@@ -1,0 +1,207 @@
+{
+  "backend_testado": "Git local temporário (file://), não GitHub remoto",
+  "checks": [
+    {
+      "teste": "Config Server saudável",
+      "resultado": "OK",
+      "detalhe": "GET /actuator/health: UP"
+    },
+    {
+      "teste": "cliente-vendas/dev: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Bem-vindo ao sistema de Vendas - Ambiente DEV",
+        "server.port": "8081",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-vendas/dev: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "435666a21c5092de5308a56a11aa2a3d1a0ce12c"
+    },
+    {
+      "teste": "cliente-vendas/dev: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Bem-vindo ao sistema de Vendas - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-vendas/dev: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "ambiente": "dev",
+        "servico": "cliente-vendas",
+        "mensagem": "Bem-vindo ao sistema de Vendas - Ambiente DEV"
+      }
+    },
+    {
+      "teste": "cliente-estoque/dev: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Estoque inicializado - Ambiente DEV",
+        "server.port": "8082",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-estoque/dev: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "435666a21c5092de5308a56a11aa2a3d1a0ce12c"
+    },
+    {
+      "teste": "cliente-estoque/dev: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Serviço de Estoque inicializado - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-estoque/dev: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem": "Serviço de Estoque inicializado - Ambiente DEV",
+        "ambiente": "dev",
+        "servico": "cliente-estoque"
+      }
+    },
+    {
+      "teste": "cliente-relatorios/dev: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Relatórios em execução - Ambiente DEV",
+        "server.port": "8083",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-relatorios/dev: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "435666a21c5092de5308a56a11aa2a3d1a0ce12c"
+    },
+    {
+      "teste": "cliente-relatorios/dev: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Serviço de Relatórios em execução - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-relatorios/dev: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "servico": "cliente-relatorios",
+        "ambiente": "dev",
+        "mensagem": "Serviço de Relatórios em execução - Ambiente DEV"
+      }
+    },
+    {
+      "teste": "Novo commit visível no Config Server",
+      "resultado": "OK",
+      "detalhe": "f7ce1506617c0b2c9ceb27a8d4072e7576be54e9"
+    },
+    {
+      "teste": "Cliente conserva valor até refresh",
+      "resultado": "OK",
+      "detalhe": "Bem-vindo ao sistema de Vendas - Ambiente DEV"
+    },
+    {
+      "teste": "Atualização sem reiniciar cliente",
+      "resultado": "OK",
+      "detalhe": "Mensagem atualizada por commit Git - Ambiente DEV"
+    },
+    {
+      "teste": "Processo do cliente permanece ativo",
+      "resultado": "OK",
+      "detalhe": {
+        "pid": 7612
+      }
+    },
+    {
+      "teste": "cliente-vendas/prod: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Bem-vindo ao sistema de Vendas - Ambiente PROD",
+        "server.port": "8081",
+        "app.ambiente": "prod"
+      }
+    },
+    {
+      "teste": "cliente-vendas/prod: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "f7ce1506617c0b2c9ceb27a8d4072e7576be54e9"
+    },
+    {
+      "teste": "cliente-vendas/prod: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Bem-vindo ao sistema de Vendas - Ambiente PROD"
+    },
+    {
+      "teste": "cliente-vendas/prod: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "ambiente": "prod",
+        "mensagem": "Bem-vindo ao sistema de Vendas - Ambiente PROD",
+        "servico": "cliente-vendas"
+      }
+    },
+    {
+      "teste": "cliente-estoque/prod: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Estoque inicializado - Ambiente PROD",
+        "server.port": "8082",
+        "app.ambiente": "prod"
+      }
+    },
+    {
+      "teste": "cliente-estoque/prod: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "f7ce1506617c0b2c9ceb27a8d4072e7576be54e9"
+    },
+    {
+      "teste": "cliente-estoque/prod: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Serviço de Estoque inicializado - Ambiente PROD"
+    },
+    {
+      "teste": "cliente-estoque/prod: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "ambiente": "prod",
+        "mensagem": "Serviço de Estoque inicializado - Ambiente PROD",
+        "servico": "cliente-estoque"
+      }
+    },
+    {
+      "teste": "cliente-relatorios/prod: propriedades remotas",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Relatórios em execução - Ambiente PROD",
+        "server.port": "8083",
+        "app.ambiente": "prod"
+      }
+    },
+    {
+      "teste": "cliente-relatorios/prod: versionamento Git",
+      "resultado": "OK",
+      "detalhe": "f7ce1506617c0b2c9ceb27a8d4072e7576be54e9"
+    },
+    {
+      "teste": "cliente-relatorios/prod: mensagem e porta",
+      "resultado": "OK",
+      "detalhe": "Serviço de Relatórios em execução - Ambiente PROD"
+    },
+    {
+      "teste": "cliente-relatorios/prod: ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem": "Serviço de Relatórios em execução - Ambiente PROD",
+        "ambiente": "prod",
+        "servico": "cliente-relatorios"
+      }
+    },
+    {
+      "teste": "Importação opcional sem servidor",
+      "resultado": "OK",
+      "detalhe": "Mensagem de fallback; porta local 18081 para este teste"
+    }
+  ],
+  "total": 30,
+  "aprovados": 30
+}

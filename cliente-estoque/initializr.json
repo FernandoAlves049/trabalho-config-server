@@ -1,0 +1,17 @@
+{
+  "origem": "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=4.0.8.RELEASE&baseDir=cliente-estoque&groupId=br.edu.trabalho&artifactId=cliente-estoque&name=ClienteEstoque&packageName=br.edu.trabalho.estoque&description=Trabalho+pratico+de+configuracao+centralizada&packaging=jar&javaVersion=21&dependencies=web%2Cactuator%2Ccloud-config-client",
+  "parametros": {
+    "type": "maven-project",
+    "language": "java",
+    "bootVersion": "4.0.8.RELEASE",
+    "baseDir": "cliente-estoque",
+    "groupId": "br.edu.trabalho",
+    "artifactId": "cliente-estoque",
+    "name": "ClienteEstoque",
+    "packageName": "br.edu.trabalho.estoque",
+    "description": "Trabalho pratico de configuracao centralizada",
+    "packaging": "jar",
+    "javaVersion": "21",
+    "dependencies": "web,actuator,cloud-config-client"
+  }
+}
