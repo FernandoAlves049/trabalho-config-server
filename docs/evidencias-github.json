@@ -1,0 +1,97 @@
+{
+  "backend_testado": "https://github.com/FernandoAlves049/repo-configs.git",
+  "commit": "fb4f0edde762c5ce5d1ddd230f6c08c47cda5d81",
+  "checks": [
+    {
+      "teste": "Servidor conectado ao GitHub e saudável",
+      "resultado": "OK",
+      "detalhe": "URI padrão: https://github.com/FernandoAlves049/repo-configs.git; saúde UP"
+    },
+    {
+      "teste": "cliente-vendas: propriedades vindas do GitHub",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Bem-vindo ao sistema de Vendas - Ambiente DEV",
+        "server.port": "8081",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-vendas: SHA do commit publicado",
+      "resultado": "OK",
+      "detalhe": "fb4f0edde762c5ce5d1ddd230f6c08c47cda5d81"
+    },
+    {
+      "teste": "cliente-vendas: mensagem remota",
+      "resultado": "OK",
+      "detalhe": "Bem-vindo ao sistema de Vendas - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-vendas: serviço e ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "servico": "cliente-vendas",
+        "mensagem": "Bem-vindo ao sistema de Vendas - Ambiente DEV",
+        "ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-estoque: propriedades vindas do GitHub",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Estoque inicializado - Ambiente DEV",
+        "server.port": "8082",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-estoque: SHA do commit publicado",
+      "resultado": "OK",
+      "detalhe": "fb4f0edde762c5ce5d1ddd230f6c08c47cda5d81"
+    },
+    {
+      "teste": "cliente-estoque: mensagem remota",
+      "resultado": "OK",
+      "detalhe": "Serviço de Estoque inicializado - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-estoque: serviço e ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "servico": "cliente-estoque",
+        "ambiente": "dev",
+        "mensagem": "Serviço de Estoque inicializado - Ambiente DEV"
+      }
+    },
+    {
+      "teste": "cliente-relatorios: propriedades vindas do GitHub",
+      "resultado": "OK",
+      "detalhe": {
+        "mensagem.boasvindas": "Serviço de Relatórios em execução - Ambiente DEV",
+        "server.port": "8083",
+        "app.ambiente": "dev"
+      }
+    },
+    {
+      "teste": "cliente-relatorios: SHA do commit publicado",
+      "resultado": "OK",
+      "detalhe": "fb4f0edde762c5ce5d1ddd230f6c08c47cda5d81"
+    },
+    {
+      "teste": "cliente-relatorios: mensagem remota",
+      "resultado": "OK",
+      "detalhe": "Serviço de Relatórios em execução - Ambiente DEV"
+    },
+    {
+      "teste": "cliente-relatorios: serviço e ambiente",
+      "resultado": "OK",
+      "detalhe": {
+        "servico": "cliente-relatorios",
+        "mensagem": "Serviço de Relatórios em execução - Ambiente DEV",
+        "ambiente": "dev"
+      }
+    }
+  ],
+  "total": 13,
+  "aprovados": 13
+}

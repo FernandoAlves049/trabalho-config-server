@@ -52,7 +52,7 @@ Para demonstrar PROD, parar os clientes DEV e reiniciá-los com **--spring.profi
 
 ## 5. Testes realizados e resultados
 
-Compilação Maven concluída com **BUILD SUCCESS** nas quatro aplicações. A suíte de integração executou os JARs reais e aprovou **30 verificações**, registradas em **docs/evidencias-testes.json**.
+Compilação Maven concluída com **BUILD SUCCESS** nas quatro aplicações. A suíte de integração aprovou **30 verificações** com Git local. Uma execução adicional aprovou **13 verificações com o GitHub remoto**. Os registros estão em docs/evidencias-testes.json e docs/evidencias-github.json.
 
 | Consulta / cenário | Resultado |
 | --- | --- |
@@ -62,6 +62,6 @@ Compilação Maven concluída com **BUILD SUCCESS** nas quatro aplicações. A s
 | Novo commit + POST localhost:8081/actuator/refresh | Nova mensagem carregada; processo do cliente preservado. |
 | Cliente Vendas sem Config Server, na porta 18081 do teste | Inicia com importação opcional e exibe “Configuração não carregada”. |
 
-**Escopo da validação:** os testes utilizaram um repositório Git temporário local (file://), com os seis arquivos fornecidos. A publicação e o acesso ao repositório GitHub remoto precisam ser conferidos após inserir a URL real. Código, relatório, roteiro de vídeo e instruções de publicação acompanham o projeto.
+**Validação remota:** o servidor acessou github.com/FernandoAlves049/repo-configs e os três clientes exibiram as mensagens DEV corretas. O SHA retornado corresponde ao commit publicado. Código e documentos estão em github.com/FernandoAlves049/trabalho-config-server. O teste completo de perfis e refresh usou Git local; o vídeo ainda deve ser gravado.
 
 Referências: docs.spring.io/spring-cloud-config/reference/client.html; spring.io/guides/gs/centralized-configuration/; spring.io/blog/2026/08/20/spring-cloud-2025-1-3-has-been-released/

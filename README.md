@@ -13,8 +13,8 @@ Trabalho prático: quatro aplicações Spring Boot independentes, com as configu
 
 ## Entrega
 
-- Repositório do código: publique esta pasta como `trabalho-config-server`.
-- Repositório de configurações: publique a pasta irmã `repo-configs` como outro repositório.
+- Repositório do código: `trabalho-config-server`, já publicado.
+- Repositório de configurações: `repo-configs`, já publicado separadamente.
 - Relatório: `docs/relatorio.pdf` (duas páginas); versão editável em `docs/relatorio.md`.
 - Apresentação: `docs/roteiro-video.md`, com roteiro de 15 minutos.
 - Evidências dos testes executados: `docs/evidencias-testes.json` e `docs/validacao.md`.
@@ -83,24 +83,20 @@ A versão do parent Maven foi normalizada de `4.0.8.RELEASE` para `4.0.8`, ident
 O Spring Web é fornecido pelo starter `spring-boot-starter-webmvc` no Spring Boot 4.
 A compatibilidade de versões segue a [publicação oficial do Spring Cloud 2025.1.3](https://spring.io/blog/2026/08/20/spring-cloud-2025-1-3-has-been-released/).
 
-## 1. Publicar as configurações
+## 1. Obter os projetos
 
-No GitHub, crie um repositório público vazio chamado `repo-configs` (sem README automático).
-No terminal, entre na pasta **repo-configs**, irmã desta pasta:
+Os dois repositórios já estão publicados. Para obter uma cópia com o histórico Git,
+abra um terminal na pasta onde deseja guardar o trabalho:
 
 ```powershell
-git init -b main
-git add .
-git commit -m "Adiciona configuracoes DEV e PROD dos clientes"
-git remote add origin https://github.com/FernandoAlves049/repo-configs.git
-git push -u origin main
+git clone https://github.com/FernandoAlves049/trabalho-config-server.git
+git clone https://github.com/FernandoAlves049/repo-configs.git
+cd trabalho-config-server
 ```
 
-Os comandos já usam o login FernandoAlves049. Se o Git solicitar autenticação,
-use o gerenciador de credenciais ou o fluxo de login do GitHub. Os comandos pressupõem uma pasta sem repositório Git inicializado.
-Os seis `.properties` devem ficar na **raiz** da branch `main`.
-Para configurar autoria se o Git solicitar: `git config user.name "Seu nome"` e
-`git config user.email "Seu email do GitHub"`, dentro da pasta.
+Mantenha as duas pastas lado a lado para executar a suíte de integração.
+Se já tem o pacote local, pode usar os arquivos existentes para compilar e demonstrar.
+Para fazer commits e enviar alterações, prefira as cópias clonadas acima.
 
 ## 2. Compilar
 
@@ -222,7 +218,7 @@ A suíte inicia os JARs reais, copia os arquivos para um Git temporário, faz co
 valida DEV, PROD, mensagens, portas, SHA, refresh e fallback sem servidor. Encerra os
 processos iniciados por ela e salva logs/evidências em `.run/`.
 Use `--java "C:\caminho\jdk\bin\java.exe"` e `--git "C:\caminho\git.exe"` se necessário.
-O teste local não substitui conferir o acesso ao repositório remoto publicado.
+O acesso ao GitHub também foi validado; confira `docs/evidencias-github.json`.
 O build Maven compila e empacota; os testes de comportamento estão nesta suíte Python.
 
 ## Propriedades principais
@@ -249,23 +245,18 @@ Variáveis opcionais: `CONFIG_SERVER_URL` (padrão `http://localhost:8888`),
 Sem Config Server, os clientes usam a porta local de fallback e exibem `Configuração não carregada`.
 O servidor não configura `spring.config.import` nem aponta para si mesmo.
 
-## Publicar o código e concluir a entrega
+## Concluir a entrega
 
-Crie no GitHub um segundo repositório público vazio chamado `trabalho-config-server`.
-Na pasta deste README:
+Os repositórios do código e das configurações estão públicos e ligados na seção
+“Links da atividade”. O Config Server já usa a URL real de `repo-configs` como padrão.
 
-```powershell
-git init -b main
-git add .
-git commit -m "Implementa Config Server e tres clientes Spring Boot"
-git remote add origin https://github.com/FernandoAlves049/trabalho-config-server.git
-git push -u origin main
-```
+Foram aprovadas **30 verificações com Git local** e **13 verificações adicionais
+usando o GitHub remoto**, incluindo o SHA publicado e as mensagens dos três clientes DEV.
+Confira `docs/validacao.md` e os arquivos de evidências.
 
-O `.gitignore` exclui JARs, diretórios `target`, logs e execuções temporárias.
-No repositório remoto, acrescente ao README o link real de `repo-configs` e o link do vídeo.
-Confira os endpoints usando o GitHub como backend antes de entregar.
-Se pedirem um único link, envie o do código com os outros links no README.
+Grave o vídeo de 10 a 20 minutos seguindo `docs/roteiro-video.md` e inclua seu link
+na seção “Links da atividade”. Para entregar, envie:
+https://github.com/FernandoAlves049/trabalho-config-server.
 
 ## Problemas comuns
 
